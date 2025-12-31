@@ -46,8 +46,9 @@ function App() {
           </p>
 
           <div className="bg-slate-800 border-2 border-red-500 rounded-2xl p-8 mb-8 max-w-2xl mx-auto">
-            <div className="text-5xl font-bold text-red-500 mb-2">12x de R$ 17,10</div>
-            <div className="text-2xl text-gray-300 mb-4">ou R$ 156,00 à vista</div>
+            <div className="text-5xl font-bold text-red-500 mb-2">12x de R$ 19,29*</div>
+            <div className="text-2xl text-gray-300 mb-2">ou R$ 176,00 à vista</div>
+            <div className="text-xs text-gray-500 mb-4 italic">* no cartão de crédito</div>
             <div className="flex items-center justify-center gap-6 text-sm text-gray-400">
               <span className="flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-green-500" />
