@@ -1,20 +1,28 @@
 import { useState, useEffect } from 'react';
-import { CheckCircle } from 'lucide-react';
 
 const SocialProofPopup = () => {
   const [visible, setVisible] = useState(false);
-  const [currentNotification, setCurrentNotification] = useState({ name: '', city: '', minutes: 0 });
+  const [currentBuyer, setCurrentBuyer] = useState({ name: '', city: '', state: '', minutes: 0 });
 
-  const names = ['Carlos', 'Jéssica', 'Rodrigo', 'Fernanda', 'Luiz', 'Amanda', 'Fábio', 'Patrícia', 'Bruno', 'Mariana', 'Rafael', 'Camila'];
-  const cities = ['SP', 'RJ', 'MG', 'PR', 'SC', 'BA', 'RS', 'GO', 'PE', 'CE', 'DF', 'ES'];
+  const buyers = [
+    {name:"Luciano", city:"Macaé", state:"RJ"}, {name:"Sarah", city:"Ipatinga", state:"MG"},
+    {name:"Helton", city:"Rio de Janeiro", state:"RJ"}, {name:"João", city:"São Luís", state:"MA"},
+    {name:"Vinicius", city:"Oriximiná", state:"PA"}, {name:"Diego", city:"Conceição do Mato Dentro", state:"MG"},
+    {name:"Marcelo", city:"Jacareí", state:"SP"}, {name:"Valentim", city:"Lagoa Santa", state:"MG"},
+    {name:"Fabio", city:"Parauapebas", state:"PA"}, {name:"Raphael", city:"Matozinhos", state:"MG"},
+    {name:"Everton", city:"Cotia", state:"SP"}, {name:"Rafael", city:"Brumadinho", state:"MG"},
+    {name:"Reginaldo", city:"Campos dos Goytacazes", state:"RJ"}, {name:"Leandro", city:"Jaguariaíva", state:"PR"},
+    {name:"Juliano", city:"Campos Belos", state:"GO"}, {name:"Claudinei", city:"Cotia", state:"SP"},
+    {name:"Iago", city:"Hortolândia", state:"SP"}, {name:"Gabriel", city:"Indaiatuba", state:"SP"},
+    {name:"Wilkerson", city:"Rio das Ostras", state:"RJ"}, {name:"Thiago", city:"Campinas", state:"SP"}
+  ];
 
   useEffect(() => {
     const showNotification = () => {
-      const name = names[Math.floor(Math.random() * names.length)];
-      const city = cities[Math.floor(Math.random() * cities.length)];
-      const minutes = Math.floor(Math.random() * 10) + 1;
+      const buyer = buyers[Math.floor(Math.random() * buyers.length)];
+      const minutes = Math.floor(Math.random() * 29) + 1;
 
-      setCurrentNotification({ name, city, minutes });
+      setCurrentBuyer({ ...buyer, minutes });
       setVisible(true);
 
       setTimeout(() => {
@@ -22,7 +30,7 @@ const SocialProofPopup = () => {
       }, 5000);
     };
 
-    const interval = setInterval(showNotification, 15000);
+    const interval = setInterval(showNotification, 10000 + Math.random() * 5000);
     setTimeout(showNotification, 3000);
 
     return () => clearInterval(interval);
@@ -30,36 +38,32 @@ const SocialProofPopup = () => {
 
   if (!visible) return null;
 
+  const initial = currentBuyer.name.charAt(0);
+
   return (
-    <div
-      className="fixed bottom-6 left-6 z-50 bg-slate-900 text-white px-6 py-4 rounded-xl shadow-2xl border-2 border-green-500 animate-slide-in max-w-sm"
-      style={{
-        animation: 'slideIn 0.5s ease-out'
-      }}
-    >
-      <div className="flex items-center gap-3">
-        <CheckCircle className="w-8 h-8 text-green-400 flex-shrink-0" />
-        <div>
-          <p className="font-semibold text-sm">
-            <span className="text-green-400">{currentNotification.name}</span> de {currentNotification.city}
-          </p>
-          <p className="text-xs text-gray-300">
-            se inscreveu há {currentNotification.minutes} minutos!
-          </p>
-        </div>
+    <div className="fixed bottom-6 left-6 z-50 bg-[#060F24] border border-[#004AAD] border-l-4 rounded-xl px-4 py-3 shadow-2xl animate-slide-in max-w-sm flex items-center gap-3">
+      <div
+        className="w-11 h-11 rounded-full flex items-center justify-center text-white font-black text-lg flex-shrink-0"
+        style={{
+          background: 'linear-gradient(135deg, #004AAD, #0066FF)',
+          boxShadow: '0 0 15px rgba(0,102,255,0.5)'
+        }}
+      >
+        {initial}
       </div>
-      <style>{`
-        @keyframes slideIn {
-          from {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-      `}</style>
+      <div className="flex-1">
+        <p className="text-sm text-white font-semibold">
+          🔥 <strong>{currentBuyer.name}</strong> de {currentBuyer.city} - {currentBuyer.state}
+        </p>
+        <p className="text-xs text-[#7A8FAD]">acabou de garantir o combo!</p>
+        <p className="text-xs text-[#004AAD] mt-1">⏱ há {currentBuyer.minutes} min</p>
+      </div>
+      <button
+        onClick={() => setVisible(false)}
+        className="text-[#7A8FAD] hover:text-white text-lg leading-none"
+      >
+        ×
+      </button>
     </div>
   );
 };
