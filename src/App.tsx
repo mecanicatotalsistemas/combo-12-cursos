@@ -174,9 +174,12 @@ function App() {
         {/* Video Testimonials */}
         <section className="py-16 px-4 bg-[#030A18]">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-black text-center uppercase mb-12">
-              VEJA DEPOIMENTOS REAIS DE NOSSOS ALUNOS
+            <h2 className="text-3xl md:text-4xl font-black text-center uppercase mb-4">
+              VEJA COMO FUNCIONA NA PRÁTICA
             </h2>
+            <p className="text-center text-[#7A8FAD] mb-12">
+              Assista aos vídeos e descubra por que nossos alunos estão conquistando promoções e melhores salários
+            </p>
 
             <div className="max-w-[77%] mx-auto space-y-6 mb-12">
               <div className="bg-[#060F24] border border-[#004AAD] rounded-xl overflow-hidden">
