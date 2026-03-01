@@ -178,7 +178,7 @@ function App() {
               VEJA DEPOIMENTOS REAIS DE NOSSOS ALUNOS
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="max-w-[77%] mx-auto space-y-6 mb-12">
               <div className="bg-[#060F24] border border-[#004AAD] rounded-xl overflow-hidden">
                 <video
                   autoPlay
