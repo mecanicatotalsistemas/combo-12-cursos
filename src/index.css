@@ -40,16 +40,16 @@
   @keyframes neon-pulse {
     0%, 100% {
       box-shadow:
-        0 0 20px rgba(0, 102, 255, 0.6),
-        0 0 40px rgba(0, 102, 255, 0.3),
-        0 0 80px rgba(0, 102, 255, 0.15);
+        0 0 20px rgba(255, 59, 48, 0.6),
+        0 0 40px rgba(255, 23, 68, 0.3),
+        0 0 80px rgba(255, 59, 48, 0.15);
       transform: scale(1);
     }
     50% {
       box-shadow:
-        0 0 30px rgba(0, 170, 255, 0.9),
-        0 0 60px rgba(0, 102, 255, 0.6),
-        0 0 100px rgba(0, 102, 255, 0.3);
+        0 0 30px rgba(255, 59, 48, 0.9),
+        0 0 60px rgba(255, 23, 68, 0.6),
+        0 0 100px rgba(255, 59, 48, 0.3);
       transform: scale(1.03);
     }
   }
@@ -80,7 +80,7 @@
   }
 
   .btn-cta {
-    background: linear-gradient(135deg, #004AAD, #0066FF);
+    background: linear-gradient(135deg, #FF3B30, #FF1744);
     color: #fff;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
@@ -91,12 +91,12 @@
   }
 
   .btn-cta:hover {
-    background: linear-gradient(135deg, #0066FF, #00AAFF);
+    background: linear-gradient(135deg, #FF1744, #FF5252);
     transform: translateY(-4px) scale(1.04);
     box-shadow:
-      0 0 40px rgba(0, 170, 255, 1),
-      0 0 80px rgba(0, 102, 255, 0.8),
-      0 0 120px rgba(0, 102, 255, 0.4);
+      0 0 40px rgba(255, 59, 48, 1),
+      0 0 80px rgba(255, 23, 68, 0.8),
+      0 0 120px rgba(255, 59, 48, 0.4);
   }
 
   .btn-cta::after {

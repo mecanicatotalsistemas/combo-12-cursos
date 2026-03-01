@@ -229,8 +229,7 @@ function App() {
                   {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-400">⭐</span>)}
                 </div>
                 <p className="text-[#F0F6FF] mb-4">"Já fiz 4 cursos do combo e aprendi mais do que em 2 anos de prática!"</p>
-                <p className="font-bold text-white mb-2">📢 Carlos M. — São Paulo, SP</p>
-                <p className="text-sm text-[#00E676]">🏆 Promovido após 3 meses</p>
+                <p className="font-bold text-white">Carlos M. — São Paulo, SP</p>
               </div>
 
               <div className="bg-[#060F24] border border-[#004AAD] rounded-xl p-6">
@@ -238,8 +237,7 @@ function App() {
                   {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-400">⭐</span>)}
                 </div>
                 <p className="text-[#F0F6FF] mb-4">"Certificados aceitos na minha empresa. Curso direto e fácil de aplicar."</p>
-                <p className="font-bold text-white mb-2">📢 Jéssica F. — Belo Horizonte, MG</p>
-                <p className="text-sm text-[#00E676]">🏆 Aumento salarial de 25%</p>
+                <p className="font-bold text-white">Jéssica F. — Belo Horizonte, MG</p>
               </div>
 
               <div className="bg-[#060F24] border border-[#004AAD] rounded-xl p-6">
@@ -247,8 +245,7 @@ function App() {
                   {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-400">⭐</span>)}
                 </div>
                 <p className="text-[#F0F6FF] mb-4">"Excelente investimento! O conteúdo é muito completo e prático."</p>
-                <p className="font-bold text-white mb-2">📢 Rodrigo S. — Rio de Janeiro, RJ</p>
-                <p className="text-sm text-[#00E676]">🏆 Nova função como técnico sênior</p>
+                <p className="font-bold text-white">Rodrigo S. — Rio de Janeiro, RJ</p>
               </div>
 
               <div className="bg-[#060F24] border border-[#004AAD] rounded-xl p-6">
@@ -256,8 +253,7 @@ function App() {
                   {[1,2,3,4,5].map(i => <span key={i} className="text-yellow-400">⭐</span>)}
                 </div>
                 <p className="text-[#F0F6FF] mb-4">"Consegui uma promoção depois de concluir os cursos. Recomendo!"</p>
-                <p className="font-bold text-white mb-2">📢 Fernanda L. — Curitiba, PR</p>
-                <p className="text-sm text-[#00E676]">🏆 Reconhecimento imediato da chefia</p>
+                <p className="font-bold text-white">Fernanda L. — Curitiba, PR</p>
               </div>
             </div>
           </div>
