@@ -89,10 +89,11 @@ function App() {
 
                   <div className="text-center mb-6">
                     <div className="text-[#7A8FAD] line-through text-xl mb-2">De: R$ 647,00</div>
-                    <div className="text-5xl font-black text-white mb-2">R$ 176,00</div>
-                    <div className="text-xl text-[#7A8FAD] mb-3">ou 12x de R$ 19,29*</div>
-                    <div className="inline-block bg-[#00E676] text-black text-sm font-bold px-4 py-2 rounded-lg mb-6">
-                      ✅ ou R$ 158,40 no PIX (10% OFF)
+                    <div className="text-xl text-[#7A8FAD] mb-2">12x de R$ 19,29*</div>
+                    <div className="text-sm text-[#7A8FAD] mb-4 italic">ou economize 10% no PIX:</div>
+                    <div className="inline-block bg-[#00E676] text-black px-6 py-3 rounded-lg mb-6">
+                      <div className="text-4xl font-black">R$ 176,00</div>
+                      <div className="text-xs font-bold uppercase">à vista no PIX</div>
                     </div>
                   </div>
 
