@@ -55,8 +55,7 @@ const SocialProofPopup = () => {
         <p className="text-sm text-white font-semibold">
           🔥 <strong>{currentBuyer.name}</strong> de {currentBuyer.city} - {currentBuyer.state}
         </p>
-        <p className="text-xs text-[#7A8FAD]">acabou de garantir o combo!</p>
-        <p className="text-xs text-[#004AAD] mt-1">⏱ há {currentBuyer.minutes} min</p>
+        <p className="text-xs text-[#7A8FAD]">Já se tornou nosso aluno</p>
       </div>
       <button
         onClick={() => setVisible(false)}
