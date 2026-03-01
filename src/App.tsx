@@ -10,18 +10,18 @@ function App() {
   }, []);
 
   const courses = [
-    { icon: '💧', title: 'Bombas Centrífugas', num: '01' },
-    { icon: '🔧', title: 'Hidráulica Industrial', num: '02' },
-    { icon: '🔩', title: 'Elementos de Vedação', num: '03' },
-    { icon: '💨', title: 'Compressores', num: '04' },
-    { icon: '📏', title: 'Metrologia', num: '05' },
-    { icon: '🔍', title: 'Elementos Filtrantes', num: '06' },
-    { icon: '📡', title: 'Monitoramento On-line', num: '07' },
-    { icon: '⚙️', title: 'Rolamentos e Mancais', num: '08' },
-    { icon: '🏗️', title: 'Transportador de Correia', num: '09' },
-    { icon: '🔄', title: 'Redutor e Engrenagens', num: '10' },
-    { icon: '📳', title: 'Peneira Vibratória', num: '11' },
-    { icon: '🔗', title: 'Acoplamentos', num: '12' }
+    { title: 'Bombas Centrífugas', num: '01' },
+    { title: 'Hidráulica Industrial', num: '02' },
+    { title: 'Elementos de Vedação', num: '03' },
+    { title: 'Compressores', num: '04' },
+    { title: 'Metrologia', num: '05' },
+    { title: 'Elementos Filtrantes', num: '06' },
+    { title: 'Monitoramento On-line', num: '07' },
+    { title: 'Rolamentos e Mancais', num: '08' },
+    { title: 'Transportador de Correia', num: '09' },
+    { title: 'Redutor e Engrenagens', num: '10' },
+    { title: 'Peneira Vibratória', num: '11' },
+    { title: 'Acoplamentos', num: '12' }
   ];
 
   return (
@@ -147,10 +147,12 @@ function App() {
                 <div key={course.num} className="bg-[#060F24] card-neon-border rounded-xl p-6 relative overflow-hidden">
                   <div className="absolute top-4 right-4 text-6xl font-black text-[#004AAD] opacity-20">{course.num}</div>
                   <div className="relative flex items-center gap-4">
-                    <span className="text-4xl">{course.icon}</span>
+                    <div className="flex-shrink-0 w-12 h-12 bg-[#004AAD] rounded-full flex items-center justify-center">
+                      <span className="text-xl font-black text-white">{course.num}</span>
+                    </div>
                     <div>
                       <h3 className="text-lg font-bold text-white">{course.title}</h3>
-                      <span className="text-xs text-[#00E676] font-bold">✅ Incluso</span>
+                      <span className="text-xs text-[#00E676] font-bold">Incluso</span>
                     </div>
                   </div>
                 </div>
@@ -159,8 +161,8 @@ function App() {
 
             <div className="bg-gradient-to-r from-[#004AAD] to-[#0066FF] rounded-2xl p-8 text-center" style={{boxShadow: '0 0 40px rgba(0,102,255,0.3)'}}>
               <Award className="w-16 h-16 text-[#FFD600] mx-auto mb-4" />
-              <h3 className="text-2xl font-black uppercase mb-2">🎓 12 CERTIFICADOS EMITIDOS INDIVIDUALMENTE</h3>
-              <p className="text-[#F0F6FF]">Válidos em todo o Brasil • Reconhecidos pelas empresas</p>
+              <h3 className="text-2xl font-black uppercase mb-2 text-white">12 CERTIFICADOS EMITIDOS INDIVIDUALMENTE</h3>
+              <p className="text-white">Válidos em todo o Brasil • Reconhecidos pelas empresas</p>
             </div>
 
             <div className="mt-12 text-center">
