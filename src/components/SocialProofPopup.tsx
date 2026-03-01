@@ -52,10 +52,10 @@ const SocialProofPopup = () => {
         {initial}
       </div>
       <div className="flex-1">
-        <p className="text-sm text-white font-semibold flex items-center gap-1">
-          <span className="text-yellow-500">🏆</span> <strong>{currentBuyer.name}</strong>
+        <p className="text-sm text-white font-semibold">
+          🔥 <strong>{currentBuyer.name}</strong> de {currentBuyer.city} - {currentBuyer.state}
         </p>
-        <p className="text-xs text-[#7A8FAD]">Nova função como técnico sênior</p>
+        <p className="text-xs text-[#7A8FAD]">Já se tornou nosso aluno</p>
       </div>
       <button
         onClick={() => setVisible(false)}
