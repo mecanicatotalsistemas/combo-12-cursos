@@ -30,6 +30,17 @@ function App() {
       <SocialProofPopup />
 
       <div className="pt-16">
+        {/* Header Image */}
+        <section className="py-8 px-4 bg-[#030A18]">
+          <div className="max-w-7xl mx-auto flex justify-center">
+            <img
+              src="https://static-media.hotmart.com/cG0l26jb-ckgyE7XLdyzODf8bdo=/1024x558/filters:quality(100)/hotmart/checkout_custom/631eb92a-0056-4f0f-9bb0-1c0f252e27e5/hnj3pr7rf.jpeg"
+              alt="Mecânica Total - 12 Cursos"
+              className="w-[70%] h-auto rounded-lg"
+            />
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="particles-bg grid-bg relative py-16 px-4">
           <div className="max-w-7xl mx-auto">
