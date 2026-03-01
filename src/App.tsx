@@ -171,12 +171,54 @@ function App() {
           </div>
         </section>
 
-        {/* Testimonials */}
+        {/* Video Testimonials */}
         <section className="py-16 px-4 bg-[#030A18]">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-black text-center uppercase mb-12">
-              O QUE NOSSOS ALUNOS ESTÃO DIZENDO
+              VEJA DEPOIMENTOS REAIS DE NOSSOS ALUNOS
             </h2>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-[#060F24] border border-[#004AAD] rounded-xl overflow-hidden">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/9FGcRpQIpdlqcWcdAbribLWyXhKcDq4v.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div className="bg-[#060F24] border border-[#004AAD] rounded-xl overflow-hidden">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/xc9rEgDMf2pwC8VXQEVU6ucQ1SvsL66c.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div className="bg-[#060F24] border border-[#004AAD] rounded-xl overflow-hidden">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="https://s4-lb.1app.com.br/path/https://s3.1app.com.br/master/project_3969/mctbDZwsxOPXZWlr65kFVVT3TWwKKiWN.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <h3 className="text-2xl md:text-3xl font-black text-center uppercase mb-8">
+              O QUE NOSSOS ALUNOS ESTÃO DIZENDO
+            </h3>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-[#060F24] border border-[#004AAD] rounded-xl p-6">
