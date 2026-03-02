@@ -94,7 +94,7 @@ function App() {
                 <div className="bg-[#060F24] border border-[#004AAD] rounded-2xl p-8 shadow-2xl" style={{boxShadow: '0 0 60px rgba(0,74,173,0.2)'}}>
                   <div className="border-t-4 border-[#00AAFF] rounded-t-xl -mt-8 -mx-8 mb-6 pt-6 px-8 bg-gradient-to-b from-[#0A1A35] to-transparent">
                     <div className="inline-block bg-[#FF3B30] text-white text-xs font-black uppercase px-3 py-1 rounded-full mb-4 animate-pulse">
-                      🔥 72% OFF — SÓ HOJE
+                      🔥 72% OFF
                     </div>
                   </div>
 
